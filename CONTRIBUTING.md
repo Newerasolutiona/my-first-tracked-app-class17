@@ -6,5 +6,5 @@ Ky
 Rom
 Irene
 Lawrence
-Mbai
+Mba
 New Era Solutions Academy
