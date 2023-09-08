@@ -13,3 +13,4 @@ We are working with two branches namely master and dev
 DevOps is interesting - and pays well
 I am busy working making changes to my code...
 Let now at look at git statshing
+My master branch is locked
