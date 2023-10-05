@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin-container
+    environment:
+      - PMA_HOST=your_mysql_host
+      - PMA_PORT=3306
+      - PMA_ARBITRARY=1
+    ports:
+
+version: '3.8'
+services:
+  sonarqube:
+    image: sonarqube:latest
+    container_name: sonarqube
+    environment:
+      - SONARQUBE_USERNAME=sonar_user
+      - SONARQUBE_PASSWORD=sonar_password
+      - SONARQUBE_URL=jdbc:postgresql://your_db_host:5432/sonar
+    ports:
+      - "9000:9000"
