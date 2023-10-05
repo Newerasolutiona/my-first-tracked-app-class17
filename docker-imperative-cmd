@@ -1,0 +1,6 @@
+docker run -d --name phpmyadmin-container --network sonar-network -e PMA_HOST=pma_host -e PMA_ARBITRARY=1   -p 8080:80 phpmyadmin/phpmyadmin:latest
+
+docker run -d --name sonar-container --network sonar-network -p 9000:9000 -e SONARQUBE_USERNAME=sonar_user -e 
+SONARQUBE_PASSWORD=sonar_password sonarqube:latest
+
+docker run -d --name postgres-db-container --network sonar-network -p 5432:5432 -e POSTGRES_USER=postgres_db_user -e POSTGRES_PASSWORD=postgres_db_password postgres:latest
